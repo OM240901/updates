@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Status</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #foodButton {
+            background-color: green;
+            color: white;
+        }
+        #officeButton {
+            background-color: red;
+            color: white;
+        }
+        #homeButton {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Your Location Status</h2>
+    <button id="officeButton" onclick="updateStatus('office')">Reached Office</button>
+    <button id="foodButton" onclick="updateStatus('food')">Had Food</button>
+    <button id="homeButton" onclick="updateStatus('home')">Reached Home</button>
+
+    <script>
+        function updateStatus(status) {
+            // Update the Google Sheets document through Google Sheets API or Apps Script
+            // Here, we are using a placeholder function to simulate the update
+            alert('Status Updated: ' + status);
+        }
+    </script>
+</body>
+</html>
